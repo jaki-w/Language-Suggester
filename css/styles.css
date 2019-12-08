@@ -1,3 +1,25 @@
 .quiz {
+  background-color: darkgrey;
+  padding: 20px;
+  color: lightblue;
+  margin: 20px;
+}
+
+#ruby {
   display: none;
+}
+
+.radio {
+  font-size: 20px;
+}
+
+h1 {
+  color: lightblue;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }

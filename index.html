@@ -10,19 +10,9 @@
 
   <body>
     <h1>Programming Language Suggester</h1>
+    <h3>Take a quick quiz and recieve a suggestion for which programming language to learn!</h3>
 
-  <div class="container">
-    <div class="introduction">
-      <h3>Take a quick quiz and recieve a suggestion for which programming language to learn!</h3>
-        <p>Hello! I am the programming language suggester. What is your name?</p>
-        <form id="name">
-          <div class="form-group">
-            <label for="firstName">Your name:</label>
-            <input id="firstName" class="form-control" type="text">
-            <button type="submit" class="btn btn-primary">Take the quiz!</button>
-          </div>
-        </form>
-      </div><!--introduction-->
+    <div class="container">
 
       <div class="quiz">
         <div class="radio">
@@ -105,6 +95,22 @@
           <input type="radio" name="handedness" value="ambidextrous">Ambidextrous</label>
         </div>
       </div><!--quiz-->
+
+      <div id="quizSubmit">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+      <div id="ruby">
+        <p>You should learn Ruby!</p>
+      </div>
+
+      <div id="javascript">
+        <p>You should learn Javascript!</p>
+      </div>
+
+      <div id="python">
+        <p>You should learn Python!</p>
+      </div>
 
     </div><!--container-->
   </body>
