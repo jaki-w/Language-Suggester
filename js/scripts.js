@@ -1,20 +1,20 @@
 $(document).ready(function() {
-  $("#quizSubmit").submit(function(event) {
+  $("form#blanks").submit(function(event) {
     event.preventDefault();
 
-    var petAnswer = $("input:radio[name=pet]:checked").val();
-    var beverageAnswer = $("input: radio[name=beverage]:checked").val();
-    var workAnswer = $("input: radio[name=work]:checked").val();
-    var problemSolvingAnswer = $("input: radio[name=problemSolving]:checked").val();
-    var handednessAnswer = $("input: radio[name=handedness]:checked").val();
+    var pet = $("input:radio[name=pet]:checked").val();
+    var beverage = $("input: radio[name=beverage]:checked").val();
+    var work = $("input: radio[name=work]:checked").val();
+    var problemSolving = $("input: radio[name=problemSolving]:checked").val();
+    var handedness = $("input: radio[name=handedness]:checked").val();
+    $("#ruby, #javascript, #python").hide();
 
-
-    if (petAnswer === "dogs" && beverageAnswer === "water" || petAnswer === "dogs" && beverageAnswer === "icedTea" || petAnswer === "dogs" && beverageAnswer === "soda") {
-      $("#ruby").show();
-    } else if (petAnswer === "cats" && beverageAnswer === "water" || petAnswer === "cats" && beverageAnswer === "icedTea" || petAnswer === "cats" && beverageAnswer === "soda") {
-      $("javascript").show();
-    } else (petAnswer === "neither" && beverageAnswer === "water" || petAnswer === "neither" && beverageAnswer === "icedTea" || petAnswer === "neither" && beverageAnswer === "soda") {
-      $("python").show();
+    if (pet === "dogs" && beverage === "water" || pet === "dogs" && beverage === "icedTea" || pet === "dogs" && beverage === "soda") {
+      $('#ruby').show();
+    } else if (pet === "cats" && beverage === "water" || pet === "cats" && beverage === "icedTea" || pet === "cats" && beverage === "soda") {
+      $("#javascript").show();
+    } else {
+      $("#python").show();
     }
 
   });

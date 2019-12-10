@@ -1,13 +1,10 @@
-.quiz {
+.blanks {
   background-color: darkgrey;
   padding: 20px;
   color: lightblue;
   margin: 20px;
 }
 
-#ruby {
-  display: none;
-}
 
 .radio {
   font-size: 20px;
@@ -22,4 +19,16 @@ h1 {
 
 h3 {
   text-align: center;
+}
+
+#ruby {
+  display: none;
+}
+
+#javascript {
+  display: none;
+}
+
+#python {
+  display: none;
 }
