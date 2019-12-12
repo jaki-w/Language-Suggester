@@ -1,4 +1,4 @@
-.blanks {
+form {
   background-color: darkgrey;
   padding: 20px;
   color: lightblue;
@@ -23,12 +23,21 @@ h3 {
 
 #ruby {
   display: none;
+  font-size: 30px;
+  background-color: yellow;
+  text-align: center;
 }
 
 #javascript {
   display: none;
+  font-size: 30px;
+  background-color: yellow;
+  text-align: center;
 }
 
 #python {
   display: none;
+  font-size: 30px;
+  background-color: yellow;
+  text-align: center;
 }

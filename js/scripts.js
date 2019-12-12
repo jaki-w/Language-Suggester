@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form#blanks").submit(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
 
     var pet = $("input:radio[name=pet]:checked").val();
@@ -7,7 +7,6 @@ $(document).ready(function() {
     var work = $("input: radio[name=work]:checked").val();
     var problemSolving = $("input: radio[name=problemSolving]:checked").val();
     var handedness = $("input: radio[name=handedness]:checked").val();
-    $("#ruby, #javascript, #python").hide();
 
     if (pet === "dogs" && beverage === "water" || pet === "dogs" && beverage === "icedTea" || pet === "dogs" && beverage === "soda") {
       $('#ruby').show();
