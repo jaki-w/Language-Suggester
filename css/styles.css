@@ -21,6 +21,11 @@ h3 {
   text-align: center;
 }
 
+p {
+  font-size: 20px;
+  color: white; 
+}
+
 #ruby {
   display: none;
   font-size: 30px;

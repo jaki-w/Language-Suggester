@@ -1,12 +1,14 @@
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("form#questions").submit(function() {
     event.preventDefault();
 
     var pet = $("input:radio[name=pet]:checked").val();
-    var beverage = $("input: radio[name=beverage]:checked").val();
-    var work = $("input: radio[name=work]:checked").val();
-    var problemSolving = $("input: radio[name=problemSolving]:checked").val();
-    var handedness = $("input: radio[name=handedness]:checked").val();
+    var beverage = $("input:radio[name=beverage]:checked").val();
+    var work = $("input:radio[name=work]:checked").val();
+    var problemSolving = $("input:radio[name=problemSolving]:checked").val();
+    var handedness = $("input:radio[name=handedness]:checked").val();
+
+    $("#ruby, #javascript, #python").hide();
 
     if (pet === "dogs" && beverage === "water" || pet === "dogs" && beverage === "icedTea" || pet === "dogs" && beverage === "soda") {
       $('#ruby').show();
